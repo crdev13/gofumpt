@@ -27,9 +27,9 @@ import (
 
 	"golang.org/x/sync/semaphore"
 
-	gformat "github.com/github.com/crdev13/gofumpt/format"
-	"github.com/github.com/crdev13/gofumpt/internal/govendor/diff"
-	"github.com/github.com/crdev13/gofumpt/internal/govendor/go/printer"
+	gformat "github.com/crdev13/gofumpt/format"
+	"github.com/crdev13/gofumpt/internal/govendor/diff"
+	"github.com/crdev13/gofumpt/internal/govendor/go/printer"
 	gversion "github.com/crdev13/gofumpt/internal/version"
 )
 

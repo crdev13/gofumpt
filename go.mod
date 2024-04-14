@@ -1,4 +1,4 @@
-module github.com/github.com/crdev13/gofumpt
+module github.com/crdev13/gofumpt
 
 go 1.21
 
