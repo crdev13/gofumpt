@@ -16,7 +16,7 @@ import (
 	"go/token"
 	"strings"
 
-	"crdev13/gofumpt/internal/govendor/go/printer"
+	"github.com/crdev13/gofumpt/internal/govendor/go/printer"
 )
 
 // parse parses src, which was read from the named file,

@@ -4,7 +4,7 @@ import (
 	"io"
 	"os"
 
-	"crdev13/gofumpt/format"
+	"github.com/crdev13/gofumpt/format"
 )
 
 func main() {

@@ -100,7 +100,7 @@ func (p *printer) internalError(msg ...any) {
 	if debug {
 		fmt.Print(p.pos.String() + ": ")
 		fmt.Println(msg...)
-		panic("crdev13/gofumpt/internal/govendor/go/printer")
+		panic("github.com/crdev13/gofumpt/internal/govendor/go/printer")
 	}
 }
 
@@ -199,7 +199,7 @@ func (p *printer) writeLineDirective(pos token.Position) {
 	if pos.IsValid() && (p.out.Line != pos.Line || p.out.Filename != pos.Filename) {
 		if strings.ContainsAny(pos.Filename, "\r\n") {
 			if p.sourcePosErr == nil {
-				p.sourcePosErr = fmt.Errorf("crdev13/gofumpt/internal/govendor/go/printer: source filename contains unexpected newline character: %q", pos.Filename)
+				p.sourcePosErr = fmt.Errorf("github.com/crdev13/gofumpt/internal/govendor/go/printer: source filename contains unexpected newline character: %q", pos.Filename)
 			}
 			return
 		}
@@ -992,7 +992,7 @@ func (p *printer) print(args ...any) {
 
 		default:
 			fmt.Fprintf(os.Stderr, "print: unsupported argument %v (%T)\n", arg, arg)
-			panic("crdev13/gofumpt/internal/govendor/go/printer type")
+			panic("github.com/crdev13/gofumpt/internal/govendor/go/printer type")
 		}
 		// data != ""
 
@@ -1176,7 +1176,7 @@ func (p *printer) printNode(node any) error {
 	return p.sourcePosErr
 
 unsupported:
-	return fmt.Errorf("crdev13/gofumpt/internal/govendor/go/printer: unsupported node type %T", node)
+	return fmt.Errorf("github.com/crdev13/gofumpt/internal/govendor/go/printer: unsupported node type %T", node)
 }
 
 // ----------------------------------------------------------------------------
