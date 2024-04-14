@@ -28,8 +28,8 @@ func f() {
 package p
 
 func f() {
-	for range v {
-	}
+    for range v {
+    }
 }
 `[1:])
 	got, err := format.Source(in, format.Options{})

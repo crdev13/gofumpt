@@ -132,14 +132,15 @@ func format(
 		case ' ':
 			hasSpace = true
 		case '\t':
-			indent++
+			indent+=4
 		}
 	}
 	if indent == 0 && hasSpace {
-		indent = 1
+		indent = 4
 	}
 	for i := 0; i < indent; i++ {
-		res = append(res, '\t')
+		// res = append(res, '\t')
+		res = append(res, ' ')
 	}
 
 	// Format the source.
