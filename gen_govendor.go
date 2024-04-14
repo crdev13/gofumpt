@@ -17,7 +17,7 @@ import (
 )
 
 var (
-	modulePath = "mvdan.cc/gofumpt"
+	modulePath = "crdev13/gofumpt"
 	vendorDir  = filepath.Join("internal", "govendor")
 )
 

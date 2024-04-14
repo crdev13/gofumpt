@@ -1,4 +1,4 @@
-module mvdan.cc/gofumpt
+module crdev13/gofumpt
 
 go 1.21
 
